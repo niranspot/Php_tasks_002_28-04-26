@@ -8,7 +8,7 @@ function scanFolder($path) {
     foreach ($items as $item) {
 
         // Skip . (current folder) and .. (parent folder)
-        if ($item === "." || $item === "..") {
+        if ($item === "." || $item === ".." || $item === ".git") {
             continue;
         }
 
